@@ -1,109 +1,86 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(new MyApp());
+//Dart程序执行的主入口，就像java中的main函数一样
+void main() {
+  //runApp函数强制将根控件覆盖屏幕
+  runApp(
+      new MaterialApp(
+        title: "Demo",
+        //指定app启动进入的根节点视图
+        home: new MainScaffold(),
+      )
+  );
+}
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+//定义标题栏
+class MyAppBar extends StatelessWidget {
+  final Widget title;
+
+  MyAppBar({this.title});
+
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      title: 'Flutter Demo',
-      theme: new ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or press Run > Flutter Hot Reload in IntelliJ). Notice that the
-        // counter didn't reset back to zero; the application is not restarted.
-        primarySwatch: Colors.blue,
+    return new Container(
+      height: 56.0,
+      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+      decoration: new BoxDecoration(
+          color: Colors.blue[500]
       ),
-      home: new MyHomePage(title: 'Flutter Demo Home Page'),
+      child: new Row(
+        children: <Widget>[
+          new IconButton(
+              icon: new Icon(Icons.menu),
+              tooltip: "导航菜单",
+              onPressed: () {
+
+              }),
+          new Expanded(child: title),
+          new IconButton(
+              icon: new Icon(Icons.search),
+              tooltip: "搜索",
+              onPressed: () {
+                showDialog(
+                    context: context,
+                    child: new AlertDialog(
+                      title: new Text("这是标题"),
+                      content: new Text("这是提示信息"),
+                    )
+                );
+              }
+          )
+        ],
+      ),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+//定义全局的文本控件
+var mTextView = new Text("你好，世界因为不同而精彩");
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
+//定义行视图中的子元素
+//var mColumnChildren=new List<Widget>{mTextView};
 
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
+//定义一个行视图
+var mColumn = new Column(
+  children: <Widget>[
+    new MyAppBar(
+      title: new Text("Flutter编写的应用"),
+    ),
+    new Expanded(
+        child: new Center(
+          child: mTextView,
+        )
+    )
+  ],
+);
 
-  final String title;
 
-  @override
-  _MyHomePageState createState() => new _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
-
+//定义主的脚手架页面
+class MainScaffold extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
-    return new Scaffold(
-      appBar: new AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: new Text(widget.title),
-      ),
-      body: new Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: new Column(
-          // Column is also layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Invoke "debug paint" (press "p" in the console where you ran
-          // "flutter run", or select "Toggle Debug Paint" from the Flutter tool
-          // window in IntelliJ) to see the wireframe for each widget.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            new Text(
-              'You have pushed the button this many times:',
-            ),
-            new Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: new FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: '增量',
-        child: new Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+    return new Material(
+      child: mColumn,
     );
   }
 }
