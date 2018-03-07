@@ -44,6 +44,7 @@ class GalleryAppState extends State<GalleryApp> {
             //创建了中心填充文本控件
               child: new Center(
                 child: new GestureDetector(
+                  //设置点击监听器
                   onTap: (){
                     print("点击了文本控件");
                   },
