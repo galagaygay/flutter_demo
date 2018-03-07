@@ -42,14 +42,21 @@ class GalleryAppState extends State<GalleryApp> {
           //Expanded占满剩余空间的内容区域
           new Expanded(
             //创建了中心填充文本控件
-              child: new Center(
-                child: new GestureDetector(
-                  //设置点击监听器
-                  onTap: () {
-                    print("点击了文本控件");
-                  },
-                  child: new Text("你好"),
-                ),
+              child: new Column(
+                children: <Widget>[
+                  new Text("进入可展开的视图"),
+                  new IconButton(
+                      icon: new Icon(
+                        Icons.print,
+                      ),
+                      onPressed: () {
+                        print("点击跳转新的页面");
+
+                        //页面跳转
+                        Navigator.of(context).pushNamed('/shop_page');
+                      },
+                  ),
+                ],
               )
           ),
         ],

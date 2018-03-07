@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/app.dart';
-import 'package:flutter_demo/shop/ShoppingListApp.dart';
+import 'package:flutter_demo/shop/ShoppingListPage.dart';
 import 'package:flutter_demo/shop/ShoppingListItem.dart';
 
 //Dart程序执行的主入口，就像java中的main函数一样
@@ -44,17 +44,5 @@ final List<Product> _kProducts = <Product>[
   new Product(id: 10, name: "海底捞"),
   new Product(id: 11, name: "瘦肉"),
   new Product(id: 12, name: "香蕉"),
-  new Product(id: 13, name: "香蕉"),
-  new Product(id: 14, name: "香蕉"),
-  new Product(id: 15, name: "香蕉"),
-  new Product(id: 16, name: "香蕉"),
-  new Product(id: 17, name: "香蕉"),
-  new Product(id: 18, name: "香蕉"),
-  new Product(id: 19, name: "香蕉"),
-  new Product(id: 20, name: "香蕉"),
-  new Product(id: 21, name: "香蕉"),
-  new Product(id: 22, name: "香蕉"),
-  new Product(id: 23, name: "香蕉"),
-  new Product(id: 24, name: "香蕉"),
 ];
 
