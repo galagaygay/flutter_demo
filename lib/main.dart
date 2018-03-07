@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/gallery/app.dart';
+import 'package:flutter_demo/shop/app.dart';
 
 //Dart程序执行的主入口，就像java中的main函数一样
 void main() {
