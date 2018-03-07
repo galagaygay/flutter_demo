@@ -29,7 +29,9 @@ class GalleryAppState extends State<GalleryApp> {
                 color: Colors.white,
               ),
               tooltip: "搜索",
-              onPressed: null
+              onPressed: () {
+                print("点击了搜索按钮");
+              }
           )
         ],
       ),
@@ -41,7 +43,12 @@ class GalleryAppState extends State<GalleryApp> {
           new Expanded(
             //创建了中心填充文本控件
               child: new Center(
-                child: new Text("你好"),
+                child: new GestureDetector(
+                  onTap: (){
+                    print("点击了文本控件");
+                  },
+                  child: new Text("你好"),
+                ),
               )
           ),
         ],
@@ -55,7 +62,9 @@ class GalleryAppState extends State<GalleryApp> {
               ),
               onPressed: null
           ),
-          onPressed: null
+          onPressed: () {
+            print("悬浮按钮被点击了");
+          }
       ),
     );
   }
