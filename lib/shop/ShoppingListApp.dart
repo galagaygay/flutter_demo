@@ -22,7 +22,7 @@ class ShoppingList extends StatefulWidget {
 // 有状态的视图控件的状态监听
 class _ShoppingListState extends State<ShoppingList> {
 
-  // 购物车临时存储
+  // 被移出购物车临时存储，存在这里的都是移除掉的商品
   Set<Product> _shoppingCart = new Set<Product>();
 
   //处理条目点击事件，对购物车中的商品进行添加删除操作
