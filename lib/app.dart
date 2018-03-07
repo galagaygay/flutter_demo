@@ -45,7 +45,7 @@ class GalleryAppState extends State<GalleryApp> {
               child: new Center(
                 child: new GestureDetector(
                   //设置点击监听器
-                  onTap: (){
+                  onTap: () {
                     print("点击了文本控件");
                   },
                   child: new Text("你好"),
@@ -64,9 +64,13 @@ class GalleryAppState extends State<GalleryApp> {
               onPressed: null
           ),
           onPressed: () {
-            print("悬浮按钮被点击了");
+            print("点击跳转新的页面");
+
+            //页面跳转
+            Navigator.of(context).pushNamed('/shop_page');
           }
       ),
     );
   }
 }
+

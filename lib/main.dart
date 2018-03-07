@@ -10,11 +10,16 @@ void main() {
       new MaterialApp(
         title: "Demo",
         //指定app启动进入的根节点视图
-        home: new ShoppingList(products: _kProducts,),
+        home: new GalleryApp(),
+        routes: <String, WidgetBuilder>{
+          // 先声明要跳转的新页面,title是要传递的参数,
+          // '/second_page'是给这个页面取个名字，后面会用到
+          '/shop_page': (BuildContext context) =>
+          new ShoppingList(products: _kProducts,)
+        },
       )
   );
 }
-
 
 /// 创建测试数据
 final List<Product> _kProducts = <Product>[
@@ -44,3 +49,4 @@ final List<Product> _kProducts = <Product>[
   new Product(id: 23, name: "香蕉"),
   new Product(id: 24, name: "香蕉"),
 ];
+
