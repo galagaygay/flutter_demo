@@ -17,6 +17,14 @@ void main() {
           '/shop_page': (BuildContext context) =>
           new ShoppingList(products: _kProducts,)
         },
+        //修改主题数据
+        theme: new ThemeData(
+            brightness: Brightness.light,
+            primarySwatch: Colors.blue,
+            //设置平台
+            platform: TargetPlatform.iOS
+        ),
+
       )
   );
 }
