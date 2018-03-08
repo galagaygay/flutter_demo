@@ -42,33 +42,54 @@ class GalleryAppState extends State<GalleryApp> {
           //Expanded占满剩余空间的内容区域
           new Expanded(
             //创建了中心填充文本控件
-              child: new Center(
-                  child: new Column(
-                    children: <Widget>[
-                      new RaisedButton(
-                        onPressed: () {
-                          //页面跳转
-                          Navigator.of(context).pushNamed('/counter_page1');
-                        },
-                        child: new Text("Flutter基础—根据用户输入改变控件"),
-                      ), //RaisedButton
-                      new RaisedButton(
-                        onPressed: () {
-                          //页面跳转
-                          Navigator.of(context).pushNamed('/counter_page2');
-                        },
-                        child: new Text("Flutter基础—根据用户输入改变控件2"),
-                      ), //RaisedButton
-                      new RaisedButton(
-                        onPressed: () {
-                          //页面跳转
-                          Navigator.of(context).pushNamed('/contater_page');
-                        },
-                        child: new Text("Flutter基础—常用控件之容器"),
-                      ), //RaisedButton
-                    ], //<Widget>[]
-                  ) //Column,
-              ) //Center
+            child: new Center(
+              child: new Column(
+                children: <Widget>[
+                  new Container(
+                    child: new RaisedButton(
+                      onPressed: () {
+                        //页面跳转
+                        Navigator.of(context).pushNamed('/counter_page1');
+                      },
+                      child: new Text("Flutter基础—根据用户输入改变控件"),
+                      //设置内边距
+                      padding: const EdgeInsets.all(4.0),
+                    ), //RaisedButton
+                    margin: const EdgeInsets.all(4.0),
+                  ), //Container
+                  new Container(
+                    child: new RaisedButton(
+                      onPressed: () {
+                        //页面跳转
+                        Navigator.of(context).pushNamed('/counter_page2');
+                      },
+                      child: new Text("Flutter基础—根据用户输入改变控件2"),
+                    ), //RaisedButton
+                    margin: const EdgeInsets.all(4.0),
+                  ), //Container
+                  new Container(
+                    child: new RaisedButton(
+                      onPressed: () {
+                        //页面跳转
+                        Navigator.of(context).pushNamed('/contater_page');
+                      },
+                      child: new Text("Flutter基础—常用控件之容器"),
+                    ), //RaisedButton
+                    margin: const EdgeInsets.all(4.0),
+                  ), //Container
+                  new Container(
+                    child: new RaisedButton(
+                      onPressed: () {
+                        //页面跳转
+                        Navigator.of(context).pushNamed('/text_widget_page');
+                      },
+                      child: new Text("Flutter基础—常用控件之文本"),
+                    ), //RaisedButton
+                    margin: const EdgeInsets.all(4.0),
+                  ), //Container
+                ], //<Widget>[]
+              ), //Column,
+            ), //Center
           ), //Expanded
         ], //<Widget>[]
       ), //Column
