@@ -168,6 +168,16 @@ class GalleryAppState extends State<GalleryApp> {
                     ), //RaisedButton
                     margin: const EdgeInsets.all(4.0),
                   ), //Container
+                  new Container(
+                    child: new RaisedButton(
+                      onPressed: () {
+                        //页面跳转
+                        Navigator.of(context).pushNamed('/layout_size_page');
+                      },
+                      child: new Text('Flutter基础—定位对齐之大小比例'),
+                    ), //RaisedButton
+                    margin: const EdgeInsets.all(4.0),
+                  ), //Container
                 ], //<Widget>[]
               ), //Column,
             ), //Center
