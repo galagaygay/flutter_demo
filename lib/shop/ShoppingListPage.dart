@@ -8,19 +8,19 @@ import 'ShoppingListItem.dart';
 /// 但框架将重用已经在树上的_ShoppingListState实例，而不会再次调用createState函数。
 
 /// 商品列表中列表视图
-class ShoppingList extends StatefulWidget {
+class ShoppingListPage extends StatefulWidget {
 
   //商品列表数据集合
   final List<Product> products;
 
-  ShoppingList({Key key, this.products}) :super(key: key);
+  ShoppingListPage({Key key, this.products}) :super(key: key);
 
   @override
   _ShoppingListState createState() => new _ShoppingListState();
 }
 
 // 有状态的视图控件的状态监听
-class _ShoppingListState extends State<ShoppingList> {
+class _ShoppingListState extends State<ShoppingListPage> {
 
   // 被移出购物车临时存储，存在这里的都是移除掉的商品
   Set<Product> _shoppingCart = new Set<Product>();

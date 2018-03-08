@@ -33,7 +33,7 @@ void main() {
           // 先声明要跳转的新页面,title是要传递的参数,
           // '/second_page'是给这个页面取个名字，后面会用到
           '/shop_page':
-              (BuildContext context) => new ShoppingList(products: _kProducts,),
+              (BuildContext context) => new ShoppingListPage(products: _kProducts,),
           '/counter_page1':
               (BuildContext context) => new CounterPage1(),
           '/counter_page2':
