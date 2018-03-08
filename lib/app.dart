@@ -198,6 +198,16 @@ class GalleryAppState extends State<GalleryApp> {
                     ), //RaisedButton
                     margin: const EdgeInsets.all(4.0),
                   ), //Container
+                  new Container(
+                    child: new RaisedButton(
+                      onPressed: () {
+                        //页面跳转
+                        Navigator.of(context).pushNamed('/layout_Opacity_page');
+                      },
+                      child: new Text('Flutter基础—绘画效果之不透明度'),
+                    ), //RaisedButton
+                    margin: const EdgeInsets.all(4.0),
+                  ), //Container
                 ], //<Widget>[]
               ), //Column,
             ), //Center
