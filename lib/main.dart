@@ -3,9 +3,10 @@ import 'package:flutter_demo/app.dart';
 import 'package:flutter_demo/container/ContainerDemo.dart';
 import 'package:flutter_demo/counter/CounterPage1.dart';
 import 'package:flutter_demo/counter/CounterPage2.dart';
+import 'package:flutter_demo/image/ImagePage.dart';
 import 'package:flutter_demo/shop/ShoppingListItem.dart';
 import 'package:flutter_demo/shop/ShoppingListPage.dart';
-import 'package:flutter_demo/textwidget/TextWidgetPage.dart';
+import 'package:flutter_demo/text/TextPage.dart';
 
 //Dart程序执行的主入口，就像java中的main函数一样
 void main() {
@@ -27,7 +28,9 @@ void main() {
           '/contater_page':
               (BuildContext context) => new ContainerDemo(),
           '/text_widget_page':
-              (BuildContext context) => new TextWidgetPage()
+              (BuildContext context) => new TextPage(),
+          '/image_widget_page':
+              (BuildContext context) => new ImagePage()
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(
