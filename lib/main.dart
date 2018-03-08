@@ -4,7 +4,7 @@ import 'package:flutter_demo/container/ContainerDemo.dart';
 import 'package:flutter_demo/counter/CounterPage1.dart';
 import 'package:flutter_demo/counter/CounterPage2.dart';
 import 'package:flutter_demo/image/ImagePage.dart';
-import 'package:flutter_demo/layout/LayoutDemo.dart';
+import 'package:flutter_demo/layout/LayoutRowDemo.dart';
 import 'package:flutter_demo/shop/ShoppingListItem.dart';
 import 'package:flutter_demo/shop/ShoppingListPage.dart';
 import 'package:flutter_demo/text/TextPage.dart';

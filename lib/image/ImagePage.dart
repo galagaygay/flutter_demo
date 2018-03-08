@@ -23,7 +23,7 @@ class ImagePage extends StatelessWidget {
                 new Text("Image加载网络图片"),
                 new Image.network(
                   //图片加载地址
-                  "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1520500619433&di=899cd04ace7bae197c5615942cc3e4b3&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2017-10-14%2F59e1bb9f01314.jpg",
+                  "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1520503873444&di=1a4b1c42b33390671b000aecd19eda3a&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2017-12-19%2F5a387cb8439ea.jpg",
                   //缩放比例
                   scale: 5.0,
                 ), //Image.network,
