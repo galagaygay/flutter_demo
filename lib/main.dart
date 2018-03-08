@@ -15,6 +15,7 @@ import 'package:flutter_demo/layout/LayoutPaddingDemo.dart';
 import 'package:flutter_demo/layout/LayoutRowDemo.dart';
 import 'package:flutter_demo/layout/LayoutSizedBoxDemo.dart';
 import 'package:flutter_demo/layout/LayoutStackDemo.dart';
+import 'package:flutter_demo/material/BottomNavigationBarDemo.dart';
 import 'package:flutter_demo/material/PopupMenuButtonDemo.dart';
 import 'package:flutter_demo/shop/ShoppingListItem.dart';
 import 'package:flutter_demo/shop/ShoppingListPage.dart';
@@ -67,6 +68,8 @@ void main() {
               (BuildContext context) => new OpacityDemo(),
           '/MenuButton_page':
               (BuildContext context) => new PopupMenuButtonDemo(),
+          '/BottomNavigationBar':
+              (BuildContext context) => new BottomNavigationBarDemo(),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(
