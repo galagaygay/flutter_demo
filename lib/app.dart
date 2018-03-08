@@ -16,10 +16,10 @@ class GalleryAppState extends State<GalleryApp> {
           icon: new Icon(
             Icons.menu,
             color: Colors.white,
-          ),
+          ), //Icon
           tooltip: "导航菜单",
           onPressed: null,
-        ),
+        ), //IconButton
         title: new Text("主页面"),
         centerTitle: true,
         actions: <Widget>[
@@ -27,14 +27,14 @@ class GalleryAppState extends State<GalleryApp> {
               icon: new Icon(
                 Icons.search,
                 color: Colors.white,
-              ),
+              ), //Icon
               tooltip: "搜索",
               onPressed: () {
                 print("点击了搜索按钮");
               }
-          )
-        ],
-      ),
+          ) //IconButton
+        ], // <Widget>[]
+      ), //AppBar
       //Column垂直布局
       body: new Column(
         children: <Widget>[
@@ -42,25 +42,36 @@ class GalleryAppState extends State<GalleryApp> {
           //Expanded占满剩余空间的内容区域
           new Expanded(
             //创建了中心填充文本控件
-              child: new Column(
-                children: <Widget>[
-                  new Text("进入可展开的视图"),
-                  new IconButton(
-                      icon: new Icon(
-                        Icons.print,
-                      ),
-                      onPressed: () {
-                        print("点击跳转新的页面");
-
-                        //页面跳转
-                        Navigator.of(context).pushNamed('/counter_page');
-                      },
-                  ),
-                ],
-              )
-          ),
-        ],
-      ),
+              child: new Center(
+                  child: new Column(
+                    children: <Widget>[
+                      new RaisedButton(
+                        onPressed: () {
+                          //页面跳转
+                          Navigator.of(context).pushNamed('/counter_page1');
+                        },
+                        child: new Text("Flutter基础—根据用户输入改变控件"),
+                      ), //RaisedButton
+                      new RaisedButton(
+                        onPressed: () {
+                          //页面跳转
+                          Navigator.of(context).pushNamed('/counter_page2');
+                        },
+                        child: new Text("Flutter基础—根据用户输入改变控件2"),
+                      ), //RaisedButton
+                      new RaisedButton(
+                        onPressed: () {
+                          //页面跳转
+                          Navigator.of(context).pushNamed('/contater_page');
+                        },
+                        child: new Text("Flutter基础—常用控件之容器"),
+                      ), //RaisedButton
+                    ], //<Widget>[]
+                  ) //Column,
+              ) //Center
+          ), //Expanded
+        ], //<Widget>[]
+      ), //Column
       floatingActionButton: new FloatingActionButton(
           tooltip: "悬浮按钮",
           child: new IconButton(
@@ -69,15 +80,14 @@ class GalleryAppState extends State<GalleryApp> {
                 color: Colors.white,
               ),
               onPressed: null
-          ),
+          ), //IconButton
           onPressed: () {
             print("点击跳转新的页面");
 
             //页面跳转
             Navigator.of(context).pushNamed('/shop_page');
-          }
-      ),
-    );
-  }
+          } //() {}
+      ), //FloatingActionButton
+    ); //Scaffold
+  } //Widget build
 }
-

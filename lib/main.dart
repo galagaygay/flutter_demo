@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/app.dart';
+import 'package:flutter_demo/container/ContainerDemo.dart';
 import 'package:flutter_demo/counter/CounterPage1.dart';
 import 'package:flutter_demo/counter/CounterPage2.dart';
 import 'package:flutter_demo/shop/ShoppingListItem.dart';
@@ -16,10 +17,14 @@ void main() {
         routes: <String, WidgetBuilder>{
           // 先声明要跳转的新页面,title是要传递的参数,
           // '/second_page'是给这个页面取个名字，后面会用到
-          '/shop_page': (BuildContext context) =>
-          new ShoppingList(products: _kProducts,),
-          '/counter_page': (BuildContext context) =>
-          new CounterPage2()
+          '/shop_page':
+              (BuildContext context) => new ShoppingList(products: _kProducts,),
+          '/counter_page1':
+              (BuildContext context) => new CounterPage1(),
+          '/counter_page2':
+              (BuildContext context) => new CounterPage2(),
+          '/contater_page':
+              (BuildContext context) => new ContainerDemo()
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(
