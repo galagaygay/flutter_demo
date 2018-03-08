@@ -13,7 +13,7 @@ class LayoutColumnDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("垂直方向布局"),
+        title: new Text("Column垂直布局"),
       ),
       body: new Column(
         children: <Widget>[

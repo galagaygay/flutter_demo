@@ -12,7 +12,7 @@ class LayoutRowDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("水平方向布局"),
+        title: new Text("Row水平布局"),
       ),
       body: new Row(
         children: <Widget>[
