@@ -43,7 +43,7 @@ class GalleryAppState extends State<GalleryApp> {
           new Expanded(
             //创建了中心填充文本控件
             child: new Center(
-              child: new Column(
+              child: new ListView(
                 children: <Widget>[
                   new Container(
                     child: new RaisedButton(
@@ -144,6 +144,16 @@ class GalleryAppState extends State<GalleryApp> {
                         Navigator.of(context).pushNamed('/layout_center_page');
                       },
                       child: new Text('Flutter基础—定位对齐之中心定位'),
+                    ), //RaisedButton
+                    margin: const EdgeInsets.all(4.0),
+                  ), //Container
+                  new Container(
+                    child: new RaisedButton(
+                      onPressed: () {
+                        //页面跳转
+                        Navigator.of(context).pushNamed('/layout_align_page');
+                      },
+                      child: new Text('Flutter基础—定位对齐之对齐'),
                     ), //RaisedButton
                     margin: const EdgeInsets.all(4.0),
                   ), //Container
