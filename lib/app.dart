@@ -53,7 +53,7 @@ class GalleryAppState extends State<GalleryApp> {
                         print("点击跳转新的页面");
 
                         //页面跳转
-                        Navigator.of(context).pushNamed('/shop_page');
+                        Navigator.of(context).pushNamed('/counter_page');
                       },
                   ),
                 ],

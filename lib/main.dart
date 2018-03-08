@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/app.dart';
-import 'package:flutter_demo/shop/ShoppingListPage.dart';
+import 'package:flutter_demo/counter/CounterPage1.dart';
+import 'package:flutter_demo/counter/CounterPage2.dart';
 import 'package:flutter_demo/shop/ShoppingListItem.dart';
+import 'package:flutter_demo/shop/ShoppingListPage.dart';
 
 //Dart程序执行的主入口，就像java中的main函数一样
 void main() {
@@ -15,18 +17,19 @@ void main() {
           // 先声明要跳转的新页面,title是要传递的参数,
           // '/second_page'是给这个页面取个名字，后面会用到
           '/shop_page': (BuildContext context) =>
-          new ShoppingList(products: _kProducts,)
-        },
+          new ShoppingList(products: _kProducts,),
+          '/counter_page': (BuildContext context) =>
+          new CounterPage2()
+        }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(
             brightness: Brightness.light,
             primarySwatch: Colors.blue,
             //设置平台
             platform: TargetPlatform.iOS
-        ),
-
-      )
-  );
+        ), //ThemeData
+      ) //MaterialApp
+  ); //runApp
 }
 
 /// 创建测试数据
