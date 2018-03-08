@@ -17,6 +17,7 @@ import 'package:flutter_demo/layout/LayoutSizedBoxDemo.dart';
 import 'package:flutter_demo/layout/LayoutStackDemo.dart';
 import 'package:flutter_demo/material/BottomNavigationBarDemo.dart';
 import 'package:flutter_demo/material/PopupMenuButtonDemo.dart';
+import 'package:flutter_demo/network/HttpJsonDemo.dart';
 import 'package:flutter_demo/shop/ShoppingListItem.dart';
 import 'package:flutter_demo/shop/ShoppingListPage.dart';
 import 'package:flutter_demo/text/TextPage.dart';
@@ -70,6 +71,8 @@ void main() {
               (BuildContext context) => new PopupMenuButtonDemo(),
           '/BottomNavigationBar':
               (BuildContext context) => new BottomNavigationBarDemo(),
+          '/HttpJsonDemo':
+              (BuildContext context) => new HttpJsonDemo(),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(
