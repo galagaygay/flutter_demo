@@ -5,6 +5,7 @@ import 'package:flutter_demo/counter/CounterPage1.dart';
 import 'package:flutter_demo/counter/CounterPage2.dart';
 import 'package:flutter_demo/image/ImagePage.dart';
 import 'package:flutter_demo/layout/LayoutAlignDemo.dart';
+import 'package:flutter_demo/layout/LayoutAspectRatioDemo.dart';
 import 'package:flutter_demo/layout/LayoutCenterDemo.dart';
 import 'package:flutter_demo/layout/LayoutColumnDemo.dart';
 import 'package:flutter_demo/layout/LayoutListViewDemo.dart';
@@ -54,7 +55,9 @@ void main() {
           '/layout_padding_page':
               (BuildContext context) => new LayoutPaddingDemo(),
           '/layout_size_page':
-              (BuildContext context) => new LayoutSizeBox(),
+              (BuildContext context) => new LayoutSizeBoxDemo(),
+          '/layout_aspectratio_page':
+              (BuildContext context) => new LayoutAspectRatioDemo(),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(
