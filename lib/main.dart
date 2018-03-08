@@ -8,6 +8,7 @@ import 'package:flutter_demo/layout/LayoutAlignDemo.dart';
 import 'package:flutter_demo/layout/LayoutCenterDemo.dart';
 import 'package:flutter_demo/layout/LayoutColumnDemo.dart';
 import 'package:flutter_demo/layout/LayoutListViewDemo.dart';
+import 'package:flutter_demo/layout/LayoutPaddingDemo.dart';
 import 'package:flutter_demo/layout/LayoutRowDemo.dart';
 import 'package:flutter_demo/layout/LayoutStackDemo.dart';
 import 'package:flutter_demo/shop/ShoppingListItem.dart';
@@ -49,6 +50,8 @@ void main() {
               (BuildContext context) => new LayoutCenterDemo(),
           '/layout_align_page':
               (BuildContext context) => new LayoutAlignDemo(),
+          '/layout_padding_page':
+              (BuildContext context) => new LayoutPaddingDemo(),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(

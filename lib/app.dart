@@ -131,7 +131,8 @@ class GalleryAppState extends State<GalleryApp> {
                     child: new RaisedButton(
                       onPressed: () {
                         //页面跳转
-                        Navigator.of(context).pushNamed('/layout_list_view_page');
+                        Navigator.of(context).pushNamed(
+                            '/layout_list_view_page');
                       },
                       child: new Text('Flutter基础—布局模型之滚动块ListView'),
                     ), //RaisedButton
@@ -154,6 +155,16 @@ class GalleryAppState extends State<GalleryApp> {
                         Navigator.of(context).pushNamed('/layout_align_page');
                       },
                       child: new Text('Flutter基础—定位对齐之对齐'),
+                    ), //RaisedButton
+                    margin: const EdgeInsets.all(4.0),
+                  ), //Container
+                  new Container(
+                    child: new RaisedButton(
+                      onPressed: () {
+                        //页面跳转
+                        Navigator.of(context).pushNamed('/layout_padding_page');
+                      },
+                      child: new Text('Flutter基础—定位对齐之填充'),
                     ), //RaisedButton
                     margin: const EdgeInsets.all(4.0),
                   ), //Container
