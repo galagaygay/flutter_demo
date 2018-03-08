@@ -188,6 +188,16 @@ class GalleryAppState extends State<GalleryApp> {
                     ), //RaisedButton
                     margin: const EdgeInsets.all(4.0),
                   ), //Container
+                  new Container(
+                    child: new RaisedButton(
+                      onPressed: () {
+                        //页面跳转
+                        Navigator.of(context).pushNamed('/layout_decorated_box_page');
+                      },
+                      child: new Text('Flutter基础—绘画效果之装饰容器'),
+                    ), //RaisedButton
+                    margin: const EdgeInsets.all(4.0),
+                  ), //Container
                 ], //<Widget>[]
               ), //Column,
             ), //Center
