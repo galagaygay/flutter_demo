@@ -4,6 +4,7 @@ import 'package:flutter_demo/container/ContainerDemo.dart';
 import 'package:flutter_demo/counter/CounterPage1.dart';
 import 'package:flutter_demo/counter/CounterPage2.dart';
 import 'package:flutter_demo/image/ImagePage.dart';
+import 'package:flutter_demo/layout/LayoutColumnDemo.dart';
 import 'package:flutter_demo/layout/LayoutRowDemo.dart';
 import 'package:flutter_demo/shop/ShoppingListItem.dart';
 import 'package:flutter_demo/shop/ShoppingListPage.dart';
@@ -32,8 +33,10 @@ void main() {
               (BuildContext context) => new TextPage(),
           '/image_widget_page':
               (BuildContext context) => new ImagePage(),
-          '/layout_page':
-              (BuildContext context) => new LayoutDemo(),
+          '/layout_row_page':
+              (BuildContext context) => new LayoutRowDemo(),
+          '/layout_column_page':
+              (BuildContext context) => new LayoutColumnDemo(),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(

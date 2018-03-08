@@ -101,9 +101,19 @@ class GalleryAppState extends State<GalleryApp> {
                     child: new RaisedButton(
                       onPressed: () {
                         //页面跳转
-                        Navigator.of(context).pushNamed('/layout_page');
+                        Navigator.of(context).pushNamed('/layout_row_page');
                       },
-                      child: new Text('Flutter基础—布局模型之水平垂直'),
+                      child: new Text('Flutter基础—布局模型之水平Row'),
+                    ), //RaisedButton
+                    margin: const EdgeInsets.all(4.0),
+                  ), //Container
+                  new Container(
+                    child: new RaisedButton(
+                      onPressed: () {
+                        //页面跳转
+                        Navigator.of(context).pushNamed('/layout_column_page');
+                      },
+                      child: new Text('Flutter基础—布局模型之垂直Column'),
                     ), //RaisedButton
                     margin: const EdgeInsets.all(4.0),
                   ), //Container
