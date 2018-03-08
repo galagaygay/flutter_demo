@@ -28,6 +28,14 @@ class LayoutRowDemo extends StatelessWidget {
                   color: Colors.white
               ), //TextStyle
             ), //Text
+            //设置按钮形状，只要是ShapeBorder子类进行，这我们使用的是圆角的矩形
+            shape: new RoundedRectangleBorder(
+              //设置边框的圆角半径
+                borderRadius: const BorderRadius.all(
+                  //转换出半径值
+                    const Radius.circular(9.3)
+                )
+            ),
           ), //RaisedButton
           new Flexible(
             flex: 1,

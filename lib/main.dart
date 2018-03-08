@@ -4,6 +4,7 @@ import 'package:flutter_demo/container/ContainerDemo.dart';
 import 'package:flutter_demo/counter/CounterPage1.dart';
 import 'package:flutter_demo/counter/CounterPage2.dart';
 import 'package:flutter_demo/image/ImagePage.dart';
+import 'package:flutter_demo/layout/LayoutCenterDemo.dart';
 import 'package:flutter_demo/layout/LayoutColumnDemo.dart';
 import 'package:flutter_demo/layout/LayoutListViewDemo.dart';
 import 'package:flutter_demo/layout/LayoutRowDemo.dart';
@@ -43,6 +44,8 @@ void main() {
               (BuildContext context) => new LayoutStackDemo(),
           '/layout_list_view_page':
               (BuildContext context) => new LayoutListViewDemo(),
+          '/layout_center_page':
+              (BuildContext context) => new LayoutCenterDemo(),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(
