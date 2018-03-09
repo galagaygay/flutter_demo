@@ -16,6 +16,7 @@ import 'package:flutter_demo/layout/LayoutPaddingDemo.dart';
 import 'package:flutter_demo/layout/LayoutRowDemo.dart';
 import 'package:flutter_demo/layout/LayoutSizedBoxDemo.dart';
 import 'package:flutter_demo/layout/LayoutStackDemo.dart';
+import 'package:flutter_demo/material/ActionViewEcologyDemo.dart';
 import 'package:flutter_demo/material/BottomNavigationBarDemo.dart';
 import 'package:flutter_demo/material/PopupMenuButtonDemo.dart';
 import 'package:flutter_demo/network/HttpJsonDemo.dart';
@@ -35,7 +36,8 @@ void main() {
           // 先声明要跳转的新页面,title是要传递的参数,
           // '/second_page'是给这个页面取个名字，后面会用到
           '/shop_page':
-              (BuildContext context) => new ShoppingListPage(products: _kProducts,),
+              (BuildContext context) =>
+          new ShoppingListPage(products: _kProducts,),
           '/counter_page1':
               (BuildContext context) => new CounterPage1(),
           '/counter_page2':
@@ -76,6 +78,16 @@ void main() {
               (BuildContext context) => new HttpJsonDemo(),
           '/LocalFileDemo':
               (BuildContext context) => new LocalFileDemo(),
+          '/ActionViewEcologyDemo':
+              (BuildContext context) =>
+          new ActionViewEcologyDemo(
+            maximumEmergy: 100,
+            maximumHunger: 100,
+            maximumMood: 100,
+            currentEmergy: 50,
+            currentHunger: 23,
+            currentMood: 44,
+          ),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(

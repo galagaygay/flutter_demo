@@ -248,6 +248,16 @@ class GalleryAppState extends State<GalleryApp> {
                     ), //RaisedButton
                     margin: const EdgeInsets.all(4.0),
                   ), //Container
+                  new Container(
+                    child: new RaisedButton(
+                      onPressed: () {
+                        //页面跳转
+                        Navigator.of(context).pushNamed('/ActionViewEcologyDemo');
+                      },
+                      child: new Text('Flutter进阶—质感设计之进度条'),
+                    ), //RaisedButton
+                    margin: const EdgeInsets.all(4.0),
+                  ), //Container
                 ], //<Widget>[]
               ), //Column,
             ), //Center
