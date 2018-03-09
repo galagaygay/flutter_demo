@@ -6,6 +6,7 @@ import 'package:flutter_demo/counter/CounterPage2.dart';
 import 'package:flutter_demo/draw/DecoratedBoxDemo.dart';
 import 'package:flutter_demo/draw/OpacityDemo.dart';
 import 'package:flutter_demo/file/LocalFileDemo.dart';
+import 'package:flutter_demo/gesturedemo/GestureDetectorDemo.dart';
 import 'package:flutter_demo/image/ImagePage.dart';
 import 'package:flutter_demo/layout/LayoutAlignDemo.dart';
 import 'package:flutter_demo/layout/LayoutAspectRatioDemo.dart';
@@ -100,6 +101,8 @@ void main() {
               (BuildContext context) => new LayoutListViewDemo2(),
           '/LayoutCardDemo':
               (BuildContext context) => new LayoutCardDemo(),
+          '/GestureDetectorDemo':
+              (BuildContext context) => new GestureDetectorDemo(),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(
