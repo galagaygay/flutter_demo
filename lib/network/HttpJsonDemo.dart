@@ -1,6 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'dart:io';
+
+import 'package:flutter/material.dart';
+//引入网络层
+
+
 ///通过网络加载JSON文件的实例
 class HttpJsonDemo extends StatelessWidget {
   @override
@@ -14,8 +18,9 @@ class HttpJsonDemo extends StatelessWidget {
           children: <Widget>[
             new RaisedButton(
               onPressed: () {
+                print("加载网络");
                 _networkLoading();
-              },//onPressed: ()
+              }, //onPressed: ()
               child: new Text("加载网络信息"),
             ) //RaisedButton
           ], //<Widget>[]
@@ -25,16 +30,26 @@ class HttpJsonDemo extends StatelessWidget {
   } //Widget build
 }
 
-void _networkLoading() {
-  // 将给定标头的HTTP GET请求发送到给定的URL，并注册回调，参数为HTTP响应
-  http.get('https://domokit.github.io/examples/stocks/data/stock_data_2.json').then((http.Response response) {
-    // 响应的主体作为字符串返回
-    String netdata = response.body;
-    // JsonDecoder类解析JSON字符串并构建相应的对象
-    JsonDecoder decoder = new JsonDecoder();
-    // 将给定的JSON字符串输入转换为其对应的对象
-    List<List<String>> json = decoder.convert(netdata);
-    // 输出给定的JSON数据
-    print(json[0][1]);
-  });
+void _networkLoading() async {
+  //https://domokit.github.io/examples/stocks/data/stock_data_2.json
+  var httpClient = new HttpClient();
+  //创建Http请求Uri
+  var uri = new Uri.https(
+    //域名
+      'domokit.github.io',
+      //要访问的具体的服务
+      '/examples/stocks/data/stock_data_2.json',
+      //get请求参数
+      {}
+  );
+  var request = await httpClient.getUrl(uri);
+  var response = await request.close();
+  var responseBody = await response.transform(UTF8.decoder).join();
+
+  // JsonDecoder类解析JSON字符串并构建相应的对象
+  JsonDecoder decoder = new JsonDecoder();
+  // 将给定的JSON字符串输入转换为其对应的对象
+  List<List<String>> json = decoder.convert(responseBody);
+  // 输出给定的JSON数据
+  print(json);
 }
