@@ -11,6 +11,7 @@ import 'package:flutter_demo/layout/LayoutAlignDemo.dart';
 import 'package:flutter_demo/layout/LayoutAspectRatioDemo.dart';
 import 'package:flutter_demo/layout/LayoutCenterDemo.dart';
 import 'package:flutter_demo/layout/LayoutColumnDemo.dart';
+import 'package:flutter_demo/layout/LayoutContainerDemo.dart';
 import 'package:flutter_demo/layout/LayoutListViewDemo.dart';
 import 'package:flutter_demo/layout/LayoutPaddingDemo.dart';
 import 'package:flutter_demo/layout/LayoutRowDemo.dart';
@@ -88,6 +89,8 @@ void main() {
             currentHunger: 23,
             currentMood: 44,
           ),
+          '/LayoutContainerDemo':
+              (BuildContext context) => new LayoutContainerDemo(),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(

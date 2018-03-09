@@ -17,6 +17,10 @@ flutter:
 
   assets:
     - images/timg.jpg
+    - images/1405166051589_middle.jpg
+    - images/1405166057580_middle.jpg
+    - images/1405166061660_middle.jpg
+    - images/1405166072230_middle.jpg
     - images/tools.png
     - images/20180309142057.png
     - assets/config.json
