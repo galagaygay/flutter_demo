@@ -9,6 +9,7 @@ import 'package:flutter_demo/file/LocalFileDemo.dart';
 import 'package:flutter_demo/image/ImagePage.dart';
 import 'package:flutter_demo/layout/LayoutAlignDemo.dart';
 import 'package:flutter_demo/layout/LayoutAspectRatioDemo.dart';
+import 'package:flutter_demo/layout/LayoutCardDemo.dart';
 import 'package:flutter_demo/layout/LayoutCenterDemo.dart';
 import 'package:flutter_demo/layout/LayoutColumnDemo.dart';
 import 'package:flutter_demo/layout/LayoutContainerDemo.dart';
@@ -97,6 +98,8 @@ void main() {
               (BuildContext context) => new LayoutGridViewDemo(),
           '/LayoutListViewDemo2':
               (BuildContext context) => new LayoutListViewDemo2(),
+          '/LayoutCardDemo':
+              (BuildContext context) => new LayoutCardDemo(),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(
