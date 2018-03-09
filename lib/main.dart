@@ -5,6 +5,7 @@ import 'package:flutter_demo/counter/CounterPage1.dart';
 import 'package:flutter_demo/counter/CounterPage2.dart';
 import 'package:flutter_demo/draw/DecoratedBoxDemo.dart';
 import 'package:flutter_demo/draw/OpacityDemo.dart';
+import 'package:flutter_demo/file/LocalFileDemo.dart';
 import 'package:flutter_demo/image/ImagePage.dart';
 import 'package:flutter_demo/layout/LayoutAlignDemo.dart';
 import 'package:flutter_demo/layout/LayoutAspectRatioDemo.dart';
@@ -73,6 +74,8 @@ void main() {
               (BuildContext context) => new BottomNavigationBarDemo(),
           '/HttpJsonDemo':
               (BuildContext context) => new HttpJsonDemo(),
+          '/LocalFileDemo':
+              (BuildContext context) => new LocalFileDemo(),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(

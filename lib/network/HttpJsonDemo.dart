@@ -21,6 +21,7 @@ class HttpJsonDemo extends StatelessWidget {
               onPressed: () {
                 print("加载网络");
                 _networkLoading();
+                print("测试异步执行效果………………");
               }, //onPressed: ()
               child: new Text("加载网络信息"),
             ) //RaisedButton
@@ -35,7 +36,7 @@ void _networkLoading() async {
   //https://domokit.github.io/examples/stocks/data/stock_data_2.json
   var httpClient = new HttpClient();
   //创建Http请求Uri
-  var uri = new Uri.https(
+  var uri = new Uri.http(
     //域名
       'domokit.github.io',
       //要访问的具体的服务

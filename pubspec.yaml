@@ -1,66 +1,20 @@
 name: flutter_demo
-description: A new Flutter project.
+description: Flutter基础使用案例
 
 dependencies:
   flutter:
     sdk: flutter
 
-  # The following adds the Cupertino Icons font to your application.
-  # 以下将Cupertino图标字体添加到您的应用程序
-  # Use with the CupertinoIcons class for iOS style icons.
-  # 与CupertinoIcons类一起使用iOS风格的图标。
   cupertino_icons: ^0.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-# For information on the generic Dart part of this file, see the
-# 有关此文件的通用Dart部分的信息，请参阅
-# following page: https://www.dartlang.org/tools/pub/pubspec
-
-# The following section is specific to Flutter.
-# 以下部分特定于Flutter。
 flutter:
 
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
-  # 下面的线确保了材质图标的字体。
-  # 包含在您的应用程序中，以便您可以使用图标。
-  # 材料类图标。
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
-  # 要将资产添加到您的应用程序中，请添加资产部分，如下所示：
   assets:
     - images/timg.jpg
-  #  - images/a_dot_ham.jpeg
-
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # 图片资源可以指一个或多个分辨率特定的“变体”，请参阅
-  # https://flutter.io/assets-and-images/#resolution-aware.
-
-  # For details regarding adding assets from package dependencies, see
-  # 有关从软件包依赖项添加资产的详细信息，请参阅
-  # https://flutter.io/assets-and-images/#from-packages
-
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts from package dependencies, 
-  # see https://flutter.io/custom-fonts/#from-packages
+    - assets/config.json
