@@ -2,8 +2,9 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-//引入网络层
 
+///'dart:convert' 用于在不同数据表示之间转换的编码器和解码器，包括JSON和UTF-8。
+///'dart:io'文件，套接字，HTTP和其他服务器应用程序的I / O支持。
 
 ///通过网络加载JSON文件的实例
 class HttpJsonDemo extends StatelessWidget {
@@ -46,10 +47,8 @@ void _networkLoading() async {
   var response = await request.close();
   var responseBody = await response.transform(UTF8.decoder).join();
 
-  // JsonDecoder类解析JSON字符串并构建相应的对象
-  JsonDecoder decoder = new JsonDecoder();
   // 将给定的JSON字符串输入转换为其对应的对象
-  List<List<String>> json = decoder.convert(responseBody);
+  List<List<String>> json = JSON.decode(responseBody);
   // 输出给定的JSON数据
   print(json);
 }
