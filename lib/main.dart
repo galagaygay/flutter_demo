@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/animation/AnimationDemo.dart';
 import 'package:flutter_demo/app.dart';
 import 'package:flutter_demo/container/ContainerDemo.dart';
 import 'package:flutter_demo/counter/CounterPage1.dart';
@@ -103,6 +104,8 @@ void main() {
               (BuildContext context) => new LayoutCardDemo(),
           '/GestureDetectorDemo':
               (BuildContext context) => new GestureDetectorDemo(),
+          '/AnimationDemo':
+              (BuildContext context) => new AnimationDemo(),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(
