@@ -14,6 +14,7 @@ import 'package:flutter_demo/layout/LayoutColumnDemo.dart';
 import 'package:flutter_demo/layout/LayoutContainerDemo.dart';
 import 'package:flutter_demo/layout/LayoutGridViewDemo.dart';
 import 'package:flutter_demo/layout/LayoutListViewDemo.dart';
+import 'package:flutter_demo/layout/LayoutListViewDemo2.dart';
 import 'package:flutter_demo/layout/LayoutPaddingDemo.dart';
 import 'package:flutter_demo/layout/LayoutRowDemo.dart';
 import 'package:flutter_demo/layout/LayoutSizedBoxDemo.dart';
@@ -94,6 +95,8 @@ void main() {
               (BuildContext context) => new LayoutContainerDemo(),
           '/LayoutGridViewDemo':
               (BuildContext context) => new LayoutGridViewDemo(),
+          '/LayoutListViewDemo2':
+              (BuildContext context) => new LayoutListViewDemo2(),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(
