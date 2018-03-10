@@ -17,7 +17,7 @@ class _AnimationDemoState extends State<AnimationDemo>
   // Random([int seed ])：创建一个随机数生成器
   final random = new Random();
 
-  int dataSet = 50;
+  int dataSet = 300;
 
   //动画控制器
   AnimationController animationController;
@@ -55,7 +55,7 @@ class _AnimationDemoState extends State<AnimationDemo>
       //指定断续提供器
         vsync: this,
         //设置动画的执行时间
-        duration: const Duration(milliseconds: 500)
+        duration: const Duration(milliseconds: 300)
     ) //AnimationController
     //每次动画的值改变时调用监听器。
       ..addListener(() {
@@ -90,7 +90,7 @@ class _AnimationDemoState extends State<AnimationDemo>
     //释放动画资源
     animationController.dispose();
     super.dispose();
-  }
+  } //dispose
 
   @override
   Widget build(BuildContext context) {
@@ -111,7 +111,7 @@ class _AnimationDemoState extends State<AnimationDemo>
       ), //FloatingActionButton
     ); //Scaffold
   } //Widget build
-}
+} //_AnimationDemoState
 
 //创建一个自定义画家。
 class BarChartPainter extends CustomPainter {
@@ -155,7 +155,7 @@ class BarChartPainter extends CustomPainter {
         ), //Rect.fromLTWH
         paint
     ); //canvas.drawRect
-  }
+  } //paint
 
   /*
   bool shouldRepaint(
@@ -170,7 +170,7 @@ class BarChartPainter extends CustomPainter {
   @override
   bool shouldRepaint(BarChartPainter oldDelegate) =>
       barHeight != oldDelegate.barHeight;
-}
+} //BarChartPainter
 
 
 
