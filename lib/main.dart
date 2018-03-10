@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/animation/AnimationDemo.dart';
+import 'package:flutter_demo/animation/TweenDemo.dart';
 import 'package:flutter_demo/app.dart';
 import 'package:flutter_demo/container/ContainerDemo.dart';
 import 'package:flutter_demo/counter/CounterPage1.dart';
@@ -84,6 +85,8 @@ void main() {
               (BuildContext context) => new HttpJsonDemo(),
           '/LocalFileDemo':
               (BuildContext context) => new LocalFileDemo(),
+          '/TweenDemo':
+              (BuildContext context) => new TweenDemo(),
           '/ActionViewEcologyDemo':
               (BuildContext context) =>
           new ActionViewEcologyDemo(
