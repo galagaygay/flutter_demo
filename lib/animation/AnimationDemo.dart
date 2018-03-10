@@ -3,7 +3,9 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-///
+///AnimationController的概念，用于编排动画，
+/// 通过注册一个监听器，我们被告知当动画值（0.0~1.0）改变时。
+/// 每当发生这种情况，我们可以像以前一样调用setState并更新 _AnimationDemoState。
 ///
 class AnimationDemo extends StatefulWidget {
   @override
