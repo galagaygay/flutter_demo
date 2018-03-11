@@ -35,6 +35,7 @@ import 'package:flutter_demo/network/HttpJsonDemo.dart';
 import 'package:flutter_demo/official/animation/LogoApp2.dart';
 import 'package:flutter_demo/official/animation/LogoApp.dart';
 import 'package:flutter_demo/official/animation/LogoApp3.dart';
+import 'package:flutter_demo/official/animation/LogoApp4.dart';
 import 'package:flutter_demo/shop/ShoppingListItem.dart';
 import 'package:flutter_demo/shop/ShoppingListPage.dart';
 import 'package:flutter_demo/text/TextPage.dart';
@@ -133,6 +134,8 @@ void main() {
               (BuildContext context) => new LogoApp2(),
           '/LogoApp3':
               (BuildContext context) => new LogoApp3(),
+          '/LogoApp4':
+              (BuildContext context) => new LogoApp4(),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(
