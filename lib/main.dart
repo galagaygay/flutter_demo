@@ -32,6 +32,7 @@ import 'package:flutter_demo/material/ActionViewEcologyDemo.dart';
 import 'package:flutter_demo/material/BottomNavigationBarDemo.dart';
 import 'package:flutter_demo/material/PopupMenuButtonDemo.dart';
 import 'package:flutter_demo/network/HttpJsonDemo.dart';
+import 'package:flutter_demo/official/animation/LogoApp.dart';
 import 'package:flutter_demo/shop/ShoppingListItem.dart';
 import 'package:flutter_demo/shop/ShoppingListPage.dart';
 import 'package:flutter_demo/text/TextPage.dart';
@@ -124,6 +125,8 @@ void main() {
               (BuildContext context) => new TweenDemo5(),
           '/TweenDemo6':
               (BuildContext context) => new TweenDemo6(),
+          '/LogoApp':
+              (BuildContext context) => new LogoApp(),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(
