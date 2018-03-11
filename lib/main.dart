@@ -41,6 +41,7 @@ import 'package:flutter_demo/official/animation/RadialExpansionDemo.dart';
 import 'package:flutter_demo/official/animation/StaggerDemo.dart';
 import 'package:flutter_demo/shop/ShoppingListItem.dart';
 import 'package:flutter_demo/shop/ShoppingListPage.dart';
+import 'package:flutter_demo/text/TextFieldDemo.dart';
 import 'package:flutter_demo/text/TextPage.dart';
 
 //Dart程序执行的主入口，就像java中的main函数一样
@@ -145,6 +146,8 @@ void main() {
               (BuildContext context) => new RadialExpansionDemo(),
           '/StaggerDemo':
               (BuildContext context) => new StaggerDemo(),
+          '/TextFieldDemo':
+              (BuildContext context) => new TextFieldDemo(),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(
