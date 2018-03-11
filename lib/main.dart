@@ -37,6 +37,7 @@ import 'package:flutter_demo/official/animation/LogoApp2.dart';
 import 'package:flutter_demo/official/animation/LogoApp3.dart';
 import 'package:flutter_demo/official/animation/LogoApp4.dart';
 import 'package:flutter_demo/official/animation/HeroAnimation.dart';
+import 'package:flutter_demo/official/animation/RadialExpansionDemo.dart';
 import 'package:flutter_demo/shop/ShoppingListItem.dart';
 import 'package:flutter_demo/shop/ShoppingListPage.dart';
 import 'package:flutter_demo/text/TextPage.dart';
@@ -139,6 +140,8 @@ void main() {
               (BuildContext context) => new LogoApp4(),
           '/PhotoHero':
               (BuildContext context) => new HeroAnimation(),
+          '/RadialExpansionDemo':
+              (BuildContext context) => new RadialExpansionDemo(),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(

@@ -62,7 +62,7 @@ class HeroAnimation extends StatelessWidget {
           onTap: () {
             //使用导航
             Navigator.of(context).push(
-              //关键点，使用MaterialPageRoute实现英雄动画的跳转
+              ///关键点，采用平台自适应转换替代整个屏幕的模态路线
                 new MaterialPageRoute<Null>(
                     builder: (BuildContext context) {
                       //
