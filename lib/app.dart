@@ -358,6 +358,16 @@ class GalleryAppState extends State<GalleryApp> {
                     ), //RaisedButton
                     margin: const EdgeInsets.all(4.0),
                   ), //Container
+                  new Container(
+                    child: new RaisedButton(
+                      onPressed: () {
+                        //页面跳转
+                        Navigator.of(context).pushNamed('/TweenDemo5');
+                      },
+                      child: new Text('Flutter进阶—实现动画效果（五）'),
+                    ), //RaisedButton
+                    margin: const EdgeInsets.all(4.0),
+                  ), //Container
                 ], //<Widget>[]
               ), //Column,
             ), //Center
