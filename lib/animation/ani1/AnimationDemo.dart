@@ -14,7 +14,7 @@ class AnimationDemo extends StatefulWidget {
 
 
 class _AnimationDemoState extends State<AnimationDemo>
-    with TickerProviderStateMixin {
+    with SingleTickerProviderStateMixin  {
 
   // Random([int seed ])：创建一个随机数生成器
   final random = new Random();
@@ -54,7 +54,8 @@ class _AnimationDemoState extends State<AnimationDemo>
 
     //创建动画控制器
     animationController = new AnimationController(
-      //指定断续提供器
+      //https://flutter.io/tutorials/animation/
+      //vsync的存在可防止离线动画消耗不必要的资源。
         vsync: this,
         //设置动画的执行时间
         duration: const Duration(milliseconds: 300)
@@ -69,8 +70,16 @@ class _AnimationDemoState extends State<AnimationDemo>
               //动画的当前值。
               animationController.value
           ); //lerpDouble
+          print("setState()=================>$currentHeight");
+
         }); //setState
-      }); //addListener
+      }) //addListener
+      ..addStatusListener(
+          (status){
+            print("addStatusListener=================>$status");
+          }
+      )//addStatusListener
+    ;
 
     //对数值进行初始化操作，防止为null
     startHeight = 0.0;
