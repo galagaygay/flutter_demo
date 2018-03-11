@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart' show timeDilation;
 
+//https://flutter.io/animations/hero-animations/
 //自定义图片视图的封装
 class Photo extends StatelessWidget {
   Photo({ Key key, this.photo, this.color, this.onTap }) : super(key: key);
