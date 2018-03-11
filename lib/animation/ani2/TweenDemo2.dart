@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/animation/BarChartPainter.dart';
+import 'package:flutter_demo/animation/ani2/BarChartPainter.dart';
 
 /// 补间，它是构建动画代码的一个非常简单的概念，
 /// 主要作用是用面向对象的方法替代之前面向过程的方法。

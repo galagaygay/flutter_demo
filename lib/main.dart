@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/animation/AnimationDemo.dart';
-import 'package:flutter_demo/animation/TweenDemo.dart';
-import 'package:flutter_demo/animation/TweenDemo2.dart';
+import 'package:flutter_demo/animation/ani1/AnimationDemo.dart';
+import 'package:flutter_demo/animation/ani2/TweenDemo.dart';
+import 'package:flutter_demo/animation/ani2/TweenDemo2.dart';
 import 'package:flutter_demo/animation/ani3/TweenDemo3.dart';
 import 'package:flutter_demo/animation/ani4/TweenDemo4.dart';
 import 'package:flutter_demo/app.dart';

@@ -3,7 +3,7 @@ import 'dart:ui';
 
 import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/animation/ani4/color_palette.dart';
+import 'package:flutter_demo/animation/color_palette.dart';
 
 //BarChart视图对象
 class BarChart {
