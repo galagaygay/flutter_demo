@@ -32,13 +32,15 @@ import 'package:flutter_demo/material/ActionViewEcologyDemo.dart';
 import 'package:flutter_demo/material/BottomNavigationBarDemo.dart';
 import 'package:flutter_demo/material/PopupMenuButtonDemo.dart';
 import 'package:flutter_demo/network/HttpJsonDemo.dart';
+import 'package:flutter_demo/official/OfficialMainList.dart';
+import 'package:flutter_demo/official/animation/HeroAnimation.dart';
 import 'package:flutter_demo/official/animation/LogoApp.dart';
 import 'package:flutter_demo/official/animation/LogoApp2.dart';
 import 'package:flutter_demo/official/animation/LogoApp3.dart';
 import 'package:flutter_demo/official/animation/LogoApp4.dart';
-import 'package:flutter_demo/official/animation/HeroAnimation.dart';
 import 'package:flutter_demo/official/animation/RadialExpansionDemo.dart';
 import 'package:flutter_demo/official/animation/StaggerDemo.dart';
+import 'package:flutter_demo/official/samples/AnimatedListSample.dart';
 import 'package:flutter_demo/shop/ShoppingListItem.dart';
 import 'package:flutter_demo/shop/ShoppingListPage.dart';
 import 'package:flutter_demo/text/TextFieldDemo.dart';
@@ -55,6 +57,8 @@ void main() {
         routes: <String, WidgetBuilder>{
           // 先声明要跳转的新页面,title是要传递的参数,
           // '/second_page'是给这个页面取个名字，后面会用到
+          '/OfficialMainList':
+              (BuildContext context) => new OfficialMainList(),
           '/shop_page':
               (BuildContext context) =>
           new ShoppingListPage(products: _kProducts,),
@@ -148,6 +152,8 @@ void main() {
               (BuildContext context) => new StaggerDemo(),
           '/TextFieldDemo':
               (BuildContext context) => new TextFieldDemo(),
+          '/AnimatedListSample':
+              (BuildContext context) => new AnimatedListSample(),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(

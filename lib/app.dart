@@ -49,6 +49,18 @@ class GalleryAppState extends State<GalleryApp> {
                     child: new RaisedButton(
                       onPressed: () {
                         //页面跳转
+                        Navigator.of(context).pushNamed('/OfficialMainList');
+                      },
+                      child: new Text("官方Demo案例"),
+                      //设置内边距
+                      padding: const EdgeInsets.all(4.0),
+                    ), //RaisedButton
+                    margin: const EdgeInsets.all(4.0),
+                  ), //Container
+                  new Container(
+                    child: new RaisedButton(
+                      onPressed: () {
+                        //页面跳转
                         Navigator.of(context).pushNamed('/counter_page1');
                       },
                       child: new Text("Flutter基础—根据用户输入改变控件"),
@@ -182,7 +194,8 @@ class GalleryAppState extends State<GalleryApp> {
                     child: new RaisedButton(
                       onPressed: () {
                         //页面跳转
-                        Navigator.of(context).pushNamed('/layout_aspectratio_page');
+                        Navigator.of(context).pushNamed(
+                            '/layout_aspectratio_page');
                       },
                       child: new Text('Flutter基础—定位对齐之比例'),
                     ), //RaisedButton
@@ -192,7 +205,8 @@ class GalleryAppState extends State<GalleryApp> {
                     child: new RaisedButton(
                       onPressed: () {
                         //页面跳转
-                        Navigator.of(context).pushNamed('/layout_decorated_box_page');
+                        Navigator.of(context).pushNamed(
+                            '/layout_decorated_box_page');
                       },
                       child: new Text('Flutter基础—绘画效果之装饰容器'),
                     ), //RaisedButton
@@ -252,7 +266,8 @@ class GalleryAppState extends State<GalleryApp> {
                     child: new RaisedButton(
                       onPressed: () {
                         //页面跳转
-                        Navigator.of(context).pushNamed('/ActionViewEcologyDemo');
+                        Navigator.of(context).pushNamed(
+                            '/ActionViewEcologyDemo');
                       },
                       child: new Text('Flutter进阶—质感设计之进度条'),
                     ), //RaisedButton
@@ -455,6 +470,16 @@ class GalleryAppState extends State<GalleryApp> {
                         Navigator.of(context).pushNamed('/TextFieldDemo');
                       },
                       child: new Text('TextFieldDemo'),
+                    ), //RaisedButton
+                    margin: const EdgeInsets.all(4.0),
+                  ), //Container
+                  new Container(
+                    child: new RaisedButton(
+                      onPressed: () {
+                        //页面跳转
+                        Navigator.of(context).pushNamed('/AnimatedListSample');
+                      },
+                      child: new Text('AnimatedListSample'),
                     ), //RaisedButton
                     margin: const EdgeInsets.all(4.0),
                   ), //Container
