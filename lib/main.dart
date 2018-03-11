@@ -5,6 +5,7 @@ import 'package:flutter_demo/animation/ani2/TweenDemo2.dart';
 import 'package:flutter_demo/animation/ani3/TweenDemo3.dart';
 import 'package:flutter_demo/animation/ani4/TweenDemo4.dart';
 import 'package:flutter_demo/animation/ani5/TweenDemo5.dart';
+import 'package:flutter_demo/animation/ani6/TweenDemo6.dart';
 import 'package:flutter_demo/app.dart';
 import 'package:flutter_demo/container/ContainerDemo.dart';
 import 'package:flutter_demo/counter/CounterPage1.dart';
@@ -121,6 +122,8 @@ void main() {
               (BuildContext context) => new TweenDemo4(),
           '/TweenDemo5':
               (BuildContext context) => new TweenDemo5(),
+          '/TweenDemo6':
+              (BuildContext context) => new TweenDemo6(),
         }, //<String, WidgetBuilder>
         //修改主题数据
         theme: new ThemeData(
