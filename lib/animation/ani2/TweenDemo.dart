@@ -7,6 +7,8 @@ import 'package:flutter/material.dart';
 /// tween是一个值，它描述了其他值的空间中的两个点之间的路径，
 /// 比如条形图的动画值从0运行到1。
 class TweenDemo extends StatefulWidget {
+  static var routeName = "/TweenDemo";
+
   @override
   State<StatefulWidget> createState() {
     return new _TweenDemoState();

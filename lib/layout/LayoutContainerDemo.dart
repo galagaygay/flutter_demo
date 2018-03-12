@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 ///
 ///Container（容器）使用
 class LayoutContainerDemo extends StatelessWidget {
+  static var routeName = "/LayoutContainerDemo";
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(

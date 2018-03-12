@@ -135,6 +135,8 @@ class StaggerAnimation extends StatelessWidget {
 }
 
 class StaggerDemo extends StatefulWidget {
+  static var routeName="/StaggerDemo";
+
   @override
   _StaggerDemoState createState() => new _StaggerDemoState();
 }

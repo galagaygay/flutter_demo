@@ -2,6 +2,8 @@ import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
 
 class LogoApp extends StatefulWidget {
+  static var routeName="/LogoApp";
+
   _LogoAppState createState() => new _LogoAppState();
 }
 

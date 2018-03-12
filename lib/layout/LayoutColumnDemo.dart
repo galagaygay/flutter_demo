@@ -8,6 +8,8 @@ import 'package:flutter/material.dart';
 /// 然后Column按照Flexible.flex属性确定的比例在可用空间中列出灵活的子控件。
 /// 要控制灵活子控件,需要使用Flexible控件：
 class LayoutColumnDemo extends StatelessWidget {
+  static var routeName = "/LayoutColumnDemo";
+
 
   @override
   Widget build(BuildContext context) {

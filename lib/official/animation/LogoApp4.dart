@@ -39,6 +39,8 @@ class AnimatedLogo extends AnimatedWidget {
 }
 
 class LogoApp4 extends StatefulWidget {
+  static var routeName = "/LogoApp4";
+
   _LogoAppState4 createState() => new _LogoAppState4();
 }
 

@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 ///当GridView检测到其内容太长，无法适应渲染框时，它会自动滚动。
 ///
 class LayoutGridViewDemo extends StatefulWidget {
+  static var routeName="/LayoutGridViewDemo";
+
   @override
   _LayoutGridViewDemoState createState() => new _LayoutGridViewDemoState();
 

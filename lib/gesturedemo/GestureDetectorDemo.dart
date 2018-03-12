@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 ///手势监听使用
 ///
 class GestureDetectorDemo extends StatefulWidget {
+  static var routeName="/GestureDetectorDemo";
+
   @override
   _GestureDetectorDemoState createState() => new _GestureDetectorDemoState();
 }

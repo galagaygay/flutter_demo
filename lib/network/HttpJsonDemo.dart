@@ -8,11 +8,13 @@ import 'package:flutter/material.dart';
 
 ///通过网络加载JSON文件的实例
 class HttpJsonDemo extends StatelessWidget {
+  static var routeName = "/HttpJsonDemo";
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("网络与本地异步加载资源"),
+        title: new Text("网络异步加载资源"),
       ), //AppBar
       body: new Center(
         child: new Column(

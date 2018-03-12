@@ -13,6 +13,8 @@ class ShoppingListPage extends StatefulWidget {
   //商品列表数据集合
   final List<Product> products;
 
+  static var routeName = "/ShoppingListPage";
+
   ShoppingListPage({Key key, this.products}) :super(key: key);
 
   @override

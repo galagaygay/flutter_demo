@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 ///DecoratedBox控件会在子控件绘制之前或之后绘制一个装饰。
 class DecoratedBoxDemo extends StatelessWidget {
+  static var routeName="/DecoratedBoxDemo";
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(

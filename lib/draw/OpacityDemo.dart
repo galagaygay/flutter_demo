@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 /// Opacity控件能调整子控件的不透明度，
 /// 使子控件部分透明，不透明度的量从0.0到1.1之间，0.0表示完全透明，1.1表示完全不透明。
 class OpacityDemo extends StatelessWidget {
+  static var routeName="/OpacityDemo";
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(

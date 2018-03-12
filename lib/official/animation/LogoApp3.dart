@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 
 ///
 class LogoApp3 extends StatefulWidget {
+  static var routeName="/LogoApp3";
+
   _LogoAppState3 createState() => new _LogoAppState3();
 }
 

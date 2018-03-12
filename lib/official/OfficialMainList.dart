@@ -5,6 +5,8 @@ import 'package:flutter_demo/official/item.dart';
 ///https://flutter.io/catalog/samples/
 ///
 class OfficialMainList extends StatefulWidget {
+  static var routeName = "/OfficialMainList";
+
   @override
   _OfficialMainListState createState() => new _OfficialMainListState();
 }

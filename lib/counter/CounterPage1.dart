@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 ///计数器页面简单实现
 ///视图主体与子控件混合编写
 class CounterPage1 extends StatefulWidget {
+  static var routeName = "/CounterPage1";
+
   @override
   _CounterState1 createState() => new _CounterState1();
 }
@@ -17,7 +19,7 @@ class _CounterState1 extends State<CounterPage1> {
   void _increment() {
     setState(() {
       _count += 1;
-    });//setState
+    }); //setState
   }
 
   @override
@@ -30,9 +32,9 @@ class _CounterState1 extends State<CounterPage1> {
         child: new Text("点击了 $_count 次按钮"),
       ), //Center
       floatingActionButton: new FloatingActionButton(
-          tooltip: "增加",
-          child: new Icon(Icons.add),
-          onPressed: _increment,
+        tooltip: "增加",
+        child: new Icon(Icons.add),
+        onPressed: _increment,
       ), //FloatingActionButton
     ); //Scaffold
   } //Widget

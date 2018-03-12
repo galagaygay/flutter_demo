@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 ///Flutter基础—常用控件之容器
 ///Container控件即容器，是一个常用的控件，基础容器的实例：
 class ContainerDemo extends StatelessWidget {
+  static var routeName="/ContainerDemo";
+
   @override
   Widget build(BuildContext context) {
     //Center控件使子控件在其内部水平和垂直居中

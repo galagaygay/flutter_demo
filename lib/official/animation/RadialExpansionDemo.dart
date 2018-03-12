@@ -88,7 +88,9 @@ class RadialExpansionDemo extends StatelessWidget {
       0.75,
       //一条曲线运动，迅速开始&缓运动到最终位置。
       curve: Curves.fastOutSlowIn
-  ); //Interval
+  );
+
+  static var routeName="/RadialExpansionDemo"; //Interval
 
   ///圆形==>矩形之间变换的补间动画，防止变化中发生形变
   static RectTween _createRectTween(Rect begin, Rect end) {

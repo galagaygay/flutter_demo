@@ -12,6 +12,8 @@ class ActionViewEcologyDemo extends StatefulWidget {
   int currentHunger;
   int currentMood;
 
+  static var routeName="/ActionViewEcologyDemo";
+
   /*
    * 构建函数，传递参数
    *  最大能量值

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 ///ListView即滚动列表控件，能将子控件组成可滚动的列表。
 /// 当你需要排列的子控件超出容器大小，就需要用到滚动块。
 class LayoutListViewDemo extends StatelessWidget {
+  static var routeName = "/LayoutListViewDemo";
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(

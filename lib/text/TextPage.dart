@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 ///Text控件的使用展示页面
 class TextPage extends StatelessWidget {
+  static var routeName="/TextPage";
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(

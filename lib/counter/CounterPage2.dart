@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 /// 实际开发中界面的构建是比较复杂的，如果将所有的代码直接编写在主体视图将造成阅读成本以及迭代成本增加
 /// 所以这里将主体视图与内部控件进行分离
 class CounterPage2 extends StatefulWidget {
+  static var routeName = "/CounterPage2";
+
   @override
   _CounterState2 createState() => new _CounterState2();
 }

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 ///PopupMenuButton控件即弹出菜单控件，点击控件会出现菜单。
 ///
 class PopupMenuButtonDemo extends StatefulWidget {
+  static var routeName = "/PopupMenuButtonDemo";
+
 
   @override
   _PopupMenuDemoState createState() => new _PopupMenuDemoState();

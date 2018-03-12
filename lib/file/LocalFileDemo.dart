@@ -6,6 +6,8 @@ import 'package:flutter/services.dart';
 
 ///通过异步加载本地Json资源，需要先在pubspec.yaml文件添加资源文件，然后再通过异步加载资源文件，以下为实例
 class LocalFileDemo extends StatelessWidget {
+  static var routeName = "/LocalFileDemo";
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(

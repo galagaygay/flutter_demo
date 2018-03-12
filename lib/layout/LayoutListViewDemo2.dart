@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 ///ListView是一个类列表的控件，当其内容对于其渲染框太长时，它会自动提供滚动。
 ///下面的布局使用ListTiles的业务列表，用分隔线将剧院与餐厅分开。
 class LayoutListViewDemo2 extends StatefulWidget {
+  static var routeName="/LayoutListViewDemo2";
+
   @override
   _LayoutListViewDemo2 createState() => new _LayoutListViewDemo2();
 }

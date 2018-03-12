@@ -8,13 +8,15 @@ import 'package:flutter/material.dart';
 /// 每当发生这种情况，我们可以像以前一样调用setState并更新 _AnimationDemoState。
 ///
 class AnimationDemo extends StatefulWidget {
+  static var routeName = "/AnimationDemo";
+
   @override
   _AnimationDemoState createState() => new _AnimationDemoState();
 }
 
 
 class _AnimationDemoState extends State<AnimationDemo>
-    with SingleTickerProviderStateMixin  {
+    with SingleTickerProviderStateMixin {
 
   // Random([int seed ])：创建一个随机数生成器
   final random = new Random();
@@ -71,15 +73,14 @@ class _AnimationDemoState extends State<AnimationDemo>
               animationController.value
           ); //lerpDouble
           print("setState()=================>$currentHeight");
-
         }); //setState
       }) //addListener
       ..addStatusListener(
-          (status){
+              (status) {
             print("addStatusListener=================>$status");
           }
-      )//addStatusListener
-    ;
+      ) //addStatusListener
+        ;
 
     //对数值进行初始化操作，防止为null
     startHeight = 0.0;

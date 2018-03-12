@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 /// Opens an [AlertDialog] showing what the user typed.
 class TextFieldDemo extends StatefulWidget {
+  static var routeName="/TextFieldDemo";
+
   TextFieldDemo({Key key}) : super(key: key);
 
   @override

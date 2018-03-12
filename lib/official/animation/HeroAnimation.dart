@@ -43,6 +43,8 @@ class PhotoHero extends StatelessWidget {
 
 ///英雄动画案例
 class HeroAnimation extends StatelessWidget {
+  static var routeName = "/HeroAnimation";
+
 
   @override
   Widget build(BuildContext context) {
@@ -62,6 +64,7 @@ class HeroAnimation extends StatelessWidget {
           onTap: () {
             //使用导航
             Navigator.of(context).push(
+
               ///关键点，采用平台自适应转换替代整个屏幕的模态路线
                 new MaterialPageRoute<Null>(
                     builder: (BuildContext context) {

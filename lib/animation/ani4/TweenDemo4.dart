@@ -9,6 +9,8 @@ import 'package:flutter_demo/animation/ani4/BarChartPainter4.dart';
 /// tween是一个值，它描述了其他值的空间中的两个点之间的路径，
 /// 比如条形图的动画值从0运行到1。
 class TweenDemo4 extends StatefulWidget {
+  static var routeName="/TweenDemo4";
+
   @override
   State<StatefulWidget> createState() {
     return new _TweenDemoState2();

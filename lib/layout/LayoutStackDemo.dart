@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 /// Stack控件本身包含所有不定位的子控件，其根据alignment定位（默认为左上角）。
 /// 然后根据定位的子控件的top、right、bottom和left属性将它们放置在Stack控件上。
 class LayoutStackDemo extends StatelessWidget {
+  static var routeName = "/LayoutStackDemo";
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(

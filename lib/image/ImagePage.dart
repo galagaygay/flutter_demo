@@ -11,6 +11,8 @@ import 'package:flutter/material.dart';
 /// 为了自动执行像素密度感知资源分辨率，使用AssetImage指定图像，
 /// 需要确保在控件树中的图片控件上方存在MaterialApp、WidgetsApp和MediaQuery控件。
 class ImagePage extends StatelessWidget {
+  static var routeName = "/ImagePage";
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(

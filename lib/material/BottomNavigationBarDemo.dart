@@ -7,6 +7,8 @@ import 'package:flutter/material.dart';
 
 /// 创建类，继承StatefulWidget（有状态的控件）
 class BottomNavigationBarDemo extends StatefulWidget {
+  static var routeName="/BottomNavigationBarDemo";
+
 
   @override
   _BottomNavigationBarState createState() => new _BottomNavigationBarState();

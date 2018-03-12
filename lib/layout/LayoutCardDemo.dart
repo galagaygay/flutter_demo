@@ -10,6 +10,8 @@ import 'package:flutter/material.dart';
 /// 下面的布局是一张包含3个ListTile的卡片，并用SizedBox包装大小。分隔符分隔第一个和第二个ListTile。
 ///
 class LayoutCardDemo extends StatefulWidget {
+  static var routeName="/LayoutCardDemo";
+
   @override
   _LayoutCardDemoState createState() => new _LayoutCardDemoState();
 }
